@@ -38,7 +38,7 @@ h3 {
 
 .sidebar {
     position: fixed;
-    background-image: url("/img/background.jpg");
+    background-image: url("../img/background.jpg");
     background-size: cover;
     top: 0;
     bottom: 0;
@@ -177,3 +177,59 @@ main .left {
     margin-right: 6%;
 }
 
+/* Tablet */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .sidebar-inner {
+        padding: 50% 30px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header .contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .section {
+        flex-direction: column;
+    }
+
+    main .img {
+        width: 100%;
+        height: 15em;
+        margin-left: 0;
+    }
+
+    main .left {
+        order: 2;
+        margin-right: 0;
+    }
+}
+
+/* Phone */
+
+@media (max-width: 480px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+    }
+
+    .sidebar-inner {
+        padding: 50px 30px;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    main .section {
+        margin-bottom: 0;
+    }
+
+    main .img {
+        display: none;
+    }
+}
